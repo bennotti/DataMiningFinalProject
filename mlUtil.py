@@ -61,7 +61,7 @@ def cvrt_to_num_if_can(str, prefer_float=False):
     if prefer_float and is_float(str):
         return float(str)
     if is_int(str):
-        return int(str)
+        return float(str)
     if is_float(str):
         return float(str)
     return str
